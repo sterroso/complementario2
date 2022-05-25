@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Reset. */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Aspecto general de toda la página. */
+body {
+    font-family: 'Karla', 'Akshar', sans-serif;
+}
+/* Configuración de los íconos de Google Material Symbols. */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+/* Íconos de Google Material Symbols con relleno. */
+.material-symbols-full {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+/*******************************************************************************
+|
+|   Mobile First: width < 576px (bootstrap X-Small breakpoint)
+|
+*******************************************************************************/
+
+/* Contenedor global del grid. */
+.global-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado. */
+header {
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #064663;
+    background-image: url(../img/bg-tech.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 1rem;
+}
+
+/* Contenedor del logotipo. */
+.logo {
+    width: 48px;
+    flex: 0 0 48px;
+}
+
+/* Siempre ocultar el checkbox del menú. */
+#menu-toggle {
+    display: none;
+}
+
+/* Apariencia del botón del menú principal. */
+#menu-toggle-label {
+    color: #ECB365;
+    font-size: 3rem;
+}
+
+/* Ocultar el título principal. */
+.main-title {
+    color: #ECB365;
+    display: none;
+}
+
+/* Menú principal. */
+.main-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Texto del menú principal. */
+.main-menu-item {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Ligas del menú principal */
+.main-menu-item a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Ligas del menú principal cuando no han sido visitadas,
+    el color debe ser igual a cuando han sido visitadas. */
+.main-menu-item a:link,
+.main-menu-item a:visited {
+    color: #064663;
+}
+
+/* Ligas del menú principal cuando están activas, 
+    cuando en pasa el mouse por encima y cuando 
+    tiene el foco (navegación por teclado). */
+.main-menu-item a.current-page,
+.main-menu-item a:hover,
+.main-menu-item a:focus,
+.main-menu-item a:active {
+    background-color: #041C32;
+    color: #ECB365;
+}
+
+/* Banner. */
+.banner-container {
+    display: none;
+}
+
+/* Formulario de búsqueda. */
+.search-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem 1rem;
+}
+
+/* Posicionamiento del main en la grilla. */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+    grid-auto-flow: dense;
+    justify-content: space-around;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem 1rem 1rem;
+}
+
+/* Elemento card. */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    box-shadow: rgba(4, 28, 50, 0.19) 0px 10px 20px, 
+        rgba(6, 70, 99, 0.23) 0px 6px 6px;
+}
+
+/* Imagen dentro de un elemento card. */
+.resource-image,
+.abstract-image {
+    border-radius: 0.75rem;
+    margin: 0.5rem;
+    border: thin solid #041C32;
+    border-radius: 1.5rem;;
+}
+
+/* Resumen de artículo. */
+.abstract {
+    background-color: whitesmoke;
+}
+
+/* Título del resumen del artículo. */
+.card-title {
+    color: #041C32;
+    margin: 0 1rem;
+}
+
+/* Contenedor del resumen. */
+.text-container {
+    padding: 0 1rem;
+}
+
+/* Texto del resumen. */
+.text {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #041C32;
+}
+
+/* Botón "Leer más" del abstract. */
+.read-more {
+    font-weight: bold;
+    color: #041C32;
+    padding: 0.5rem;
+    background: rgba(252,234,187,1);
+    background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(100%, rgba(251,223,147,1)));
+    background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 );
+    border: thin solid #041C32;
+    border-radius: 0.5rem;
+}
+
+/* Estrellas de calificación "vacías". */
+.empty {
+    color: black;
+}
+    
+/* Posición del pié de página en la grilla. */
+footer {
+    grid-area: f;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem 1rem 1rem;
+    background-color: #064663;
+}
+
+/* Menú del pié de página. */
+.footer-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+/* Ligas de cada elemento del menú del pié de página. */
+.footer-menu-item a {
+    font-weight: bold;
+}
+
+/* Aspecto de las ligas del menú de pié de pagina antes y
+    después de ser visitados. */
+.footer-menu-item a:link,
+.footer-menu-item a:visited {
+    color: #ECB365;
+}
+
+/* Menú de redes sociales */
+.social-media {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Área del copyright. */
+.copyright {
+    text-align: center;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+/* Área del autor. */
+.author {
+    text-align: center;
+    font-size: small;
+    color: whitesmoke;
+}
+
+/* Liga del autor. */
+.author > a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Liga del autor en estado previo y posterior a visita. */
+.author > a:link,
+.author > a:visited {
+    color: #ECB365;
+}
+
+/* Liga del autor cuando está activo, cuando el ratón pasa 
+    encima, y cuando tiene el foco (navegación por teclado) */
+.author > a:active,
+.author > a:hover,
+.author > a:focus {
+    color: #041C32;
+    background-color: #ECB365;
+}
+
+/* Conenedor de página de Login. */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* Títulos en el Login. */
+.login-container h1,
+.login-container h2 {
+    text-align: center;
+}
+
+/* Ocultar el split-area. */
+.split-area {
+    display: none;
+}
+
+/* Ocultar imágenes que toman demasiado espacio vertical. */
+.post-image {
+    display: none;
+}
+
+
+/*******************************************************************************
+|
+|   Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: flex-start;
+        column-gap: 1rem;
+        height: 96px;
+    }
+
+    /* Crece la imagen del logotipo. */
+    .logo {
+        width: 64px;
+    }
+
+    /* Mostrar el título principal. */
+    .main-title {
+        display: block;
+    }
+
+    /* El contenedor del botón del menú principal (y todo su contenido) no son visibles. */
+    .main-menu-button-container {
+        display: none;
+    }
+
+    /* La disposición del menú principal es horizontal, al final de la pantalla. */
+    .main-menu {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        column-gap: 1.5rem;
+    }
+
+    /* Banner. */
+    .banner-container {
+        grid-area: banner;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Imagen dentro del banner. */
+    .banner {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+
+    .footer-menu {
+        flex: 1 1 20%;
+        min-width: max-content;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        flex: 4 4 80%;
+    }
+
+    .attribution {
+        width: 100vw;
+    }
+
+    .login-container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .split-area {
+        order: 10;
+        display: block;
+        height: 50vh;
+        background: url('../img/starry-sky.jpg') no-repeat;
+        background-position-y: bottom;
+        background-position-y: center;
+        background-size: cover;
+        border: solid dashed red;
+    }
+
+    .login-container h1 {
+        order: 2;
+    }
+
+    .login-container h2 {
+        order: 1;
+    }
+
+    .post {
+        grid-column: 1 / -1;
+    }
+
+    .post-text {
+        margin-top: 1rem;
+    }
+
+    .post-image {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+/*******************************************************************************
+|
+|   Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
+@media screen and (min-width: 992px) {
+    /* Limitar la anchura del contenedor global a 1200px y centrarlo en 
+    resoluciones mayores. */
+    .global-container {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(5, minmax(min-content, 1fr));
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "h h h h h"
+            "b b b b b"
+            "n m m m s"
+            ". m m m ."
+            "f f f f f";
+    }
+
+    header {
+        grid-area: h;
+        height: 160px;
+    }
+
+    .logo {
+        width: 128px;
+    }
+
+    .banner-container {
+        grid-area: b;
+    }
+
+    .search-form-container {
+        grid-area: s;
+    }
+
+    nav {
+        grid-area: n;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Animaciones de los elementos del menú (no existe el evento
+        hover en celulares ni tabletas) */
+        @keyframes text-focus-in {
+            0% {
+                filter: blur(12px);
+                opacity: 0;
+            }
+    
+            100% {
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    
+        .main-menu-item a:hover {
+        cursor: pointer;
+        animation: text-focus-in 0.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    .split-area {
+        height: 25%;
+        max-height: 25vh;
+    }
+
+    .post {
+        grid-column: 1 / -1;
+    }
+
+    .post-text {
+        margin-top: 1rem;
+    }
+
+    .post-image {
+        display: block;
+        width: 100%;
+    }
+
+    /* Botones (el puntero del ratón no se usa en celulares ni tabletas.) */
+    button {
+        cursor: pointer;
+    }
+
+    /* Animación de las imágenes (no existe el evento hover en
+        celulares ni tabletas) */
+    @keyframes shadow-drop-center {
+        0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    .shadow-drop-center:hover {
+        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}

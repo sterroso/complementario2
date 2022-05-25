@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Guía WebDev</title>
+    <!-- Liga al CDN de Bootstrap (sólo CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Importar símbolos "Material Symbols" de Google Fonts. -->
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Hoja de estilos general. -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Hoja de estilos únicamente para formularios. -->
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado. -->
+        <header>
+            <!-- Logotipo. -->
+            <img src="../img/vending-machinew128.png" alt="logo" class="logo">
+
+            <!-- Título de la página. -->
+            <h1 class="main-title">Guía WebDev</h1>
+
+            <!-- Contenedor del botón del Menú Principal. -->
+            <div class="main-menu-button-container">
+                <input type="checkbox" name="menu-toggle" id="menu-toggle">
+                <label class="material-symbols-outlined" for="menu-toggle" 
+                id="menu-toggle-label">menu</label>
+            </div>
+        </header>
+
+        <nav class="row navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Expande/contrae el menú principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <!-- Menú Principal. -->
+                    <ul class="navbar-nav nav-tabs me-auto">
+                        <!-- Inicio. -->
+                        <li class="nav-item"><a href="../" class="nav-link">Inicio</a></li>
+
+                        <!-- Blog. -->
+                        <li class="nav-item"><a href="#" class="nav-link active">Blog</a></li>
+
+                        <!-- Nosotros. -->
+                        <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+
+                        <!-- Contacto. -->
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner-container">
+            <img 
+                srcset="../img/banner-1_w1280.jpg 992w, 
+                        ../img/banner-1_w1024.jpg 768w" 
+                sizes="(min-widt: 762px) 762px,
+                        1200px"
+                alt="Desarrollador web en la penumbra viendo un monitor que ilumina su rostro." 
+                class="banner">
+        </div>
+
+        <div class="search-form-container">
+            <form action="" id="search-form">
+                <div class="form-query-row">
+                    <label for="search-query">Buscar:</label>
+                    <input type="search" name="query" id="search-query" required>
+                    <input type="submit" value="Buscar" id="search-submit">
+                    <label class="material-symbols-outlined" 
+                        for="search-submit" 
+                        id="search-submit-label">search</label>
+                </div>
+
+                <fieldset>
+                    <legend>Limitar búsqueda</legend>
+                    <div class="form-category-row">
+                        <input type="checkbox" name="html" id="category-html_css" checked>
+                        <label for="category-html_css">HTML + CSS</label>
+                    </div>
+
+
+                    <div class="form-category-row">
+                        <input type="checkbox" name="javascript" id="category-javascript" checked>
+                        <label for="category-javascript">JS</label>
+                    </div>
+
+                    <div class="form-category-row">
+                        <input type="checkbox" name="diseno" id="category-diseno" checked>
+                        <label for="category-diseno">Diseño</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Contenido Principal -->
+        <main>
+            <!-- Usando múltiples fondos con CSS -->
+            <article class="post" id="Usando_multiples_fondos_con_CSS">
+                <h2 class="post-title">Usando múltiples fondos con CSS</h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
+                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
+                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
+                    pariatur laboriosam?</p>
+                
+                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
+                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
+                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
+                    voluptas dolorum.</p>
+
+                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
+                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
+                    error consequatur asperiores voluptatum distinctio.</p>
+
+                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
+                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
+                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
+
+                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
+                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
+                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
+                    voluptatum fugit.</p>
+                
+                <img src="../img/starry-sky.jpg" alt="" class="post-image">
+
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
+                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
+                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+
+                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
+                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
+                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
+                    odio.</p>
+
+                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
+                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
+                    Pariatur numquam quae accusamus quo non harum nihil.</p>
+            </article>
+
+            <!-- JavaScript. ¿Quieres convertirte en un desarrollador web front-end? -->
+            <article class="post" id="JavaScript_Quieres_convertirte_en_un_desarrollador_web_front-end">
+                <h2 class="post-title">JavaScript. ¿Quieres convertirte en un desarrollador web front-end?</h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
+                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
+                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
+                    pariatur laboriosam?</p>
+                
+                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
+                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
+                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
+                    voluptas dolorum.</p>
+
+                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
+                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
+                    error consequatur asperiores voluptatum distinctio.</p>
+
+                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
+                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
+                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
+
+                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
+                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
+                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
+                    voluptatum fugit.</p>
+                
+                <img src="../img/sunrise.jpg" alt="" class="post-image">
+
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
+                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
+                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+
+                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
+                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
+                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
+                    odio.</p>
+
+                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
+                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
+                    Pariatur numquam quae accusamus quo non harum nihil.</p>
+            </article>
+
+            <!-- JavaScript asíncrono -->
+            <article class="post" id="JavaScript_asincrono">
+                <h2 class="post-title">JavaScript asíncrono</h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
+                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
+                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
+                    pariatur laboriosam?</p>
+                
+                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
+                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
+                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
+                    voluptas dolorum.</p>
+
+                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
+                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
+                    error consequatur asperiores voluptatum distinctio.</p>
+
+                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
+                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
+                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
+
+                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
+                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
+                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
+                    voluptatum fugit.</p>
+                
+                <img src="../img/sea-storm.jpg" alt="" class="post-image">
+
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
+                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
+                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+
+                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
+                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
+                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
+                    odio.</p>
+
+                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
+                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
+                    Pariatur numquam quae accusamus quo non harum nihil.</p>
+            </article>
+        </main>
+
+        <!-- Pié de página -->
+        <footer>
+            <!-- Menú del pié de página. -->
+            <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="#">Política de Privacidad</a></li>
+                <li class="footer-menu-item"><a href="#">Preguntas Frecuentes</a></li>
+                <li class="footer-menu-item"><a href="contacto.html">Contacto</a></li>
+                <li class="footer-menu-item"><a href="#">Bolsa de Trabajo</a></li>
+            </ul>
+
+            <!-- Redes sociales. -->
+            <ul class="social-media">
+                <!-- Facebook -->
+                <li class="social-media-item">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-facebook_w24.png" alt="Nuestra página en Facebook">
+                    </a>
+                </li>
+
+                <!-- Instagram -->
+                <li class="social-media-item">
+                    <a href="https://wwww.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-instagram_w24.png" alt="Síguenos en Instagram">
+                    </a>
+                </li>
+
+                <!-- Twitter -->
+                <li class="social-media-item">
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-twitter_w24.png" alt="Síguenos en Twitter">
+                    </a>
+                </li>
+
+                <!-- YouTube -->
+                <li class="social-media-item">
+                    <a href="https://www.yotube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-youtube_w24.png" alt="Nuestro canal en YouTube">
+                    </a>
+                </li>
+
+                <!-- Correo electrónico -->
+                <li class="social-media-item">
+                    <a href="mailto:sergio.terroso@gmail.com">
+                        <img src="../img/email_w24.png" alt="Envíanos un correo electónico">
+                    </a>
+                </li>
+            </ul>
+            
+            <hgroup class="attribution">
+                <!-- Reserva de derechos. -->
+                <h3 class="copyright">Todos los derechos reservados. 2022. <strong>VendoMan, S.A. de C.V.</strong></h3>
+
+                <!-- Autor. -->
+                <h4 class="author">Diseño por: <a href="#" target="_blank" rel="noopener noreferrer">@sterroso</a></h4>
+            </hgroup>
+        </footer>
+    </div>
+
+    <!-- Paquete Bootstrap / Popper. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

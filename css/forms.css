@@ -1,0 +1,187 @@
+/* <------------------------ Formulario de registro ------------------------> */
+
+/*******************************************************************************
+|
+|   Formulario de registro. Mobile First: width < 768px (bootstrap Medium
+|   breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de registro. Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de registro. Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
+
+
+
+/* <------------------------ Formulario de ingreso -------------------------> */
+
+/*******************************************************************************
+|
+|   Formulario de ingreso. Mobile First: width < 768px (bootstrap Medium
+|   breakpoint)
+|
+*******************************************************************************/
+
+#login-form {
+    align-self: center;
+    min-width: 320px;
+    max-width: 512px;
+    margin: 2rem 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, auto));
+    grid-auto-rows: auto;
+    row-gap: 1rem;
+}
+
+input[type='submit'] {
+    grid-column: 1 / -1;
+}
+
+p.forgot-password {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/*******************************************************************************
+|
+|   Formulario de ingreso. Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de ingreso. Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
+
+
+
+/* <------------------------ Formulario de contacto ------------------------> */
+
+/*******************************************************************************
+|
+|   Formulario de contacto. Mobile First: width < 768px (bootstrap Medium
+|   breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de contacto. Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de contacto. Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
+
+
+
+/* <------------------------ Formulario de búsqueda ------------------------> */
+
+/*******************************************************************************
+|
+|   Formulario de búsqueda. Mobile First: width < 768px (bootstrap Medium 
+|   breakpoint)
+|
+*******************************************************************************/
+/* Estilo general del formulario. */
+#search-form {
+    max-width: 512px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    column-gap: 1rem;
+    padding: 1rem 0.5rem;
+    background-color: #064663;
+    color: #ECB365;
+    font-size: smaller;
+    border-radius: 0.5rem;
+    box-shadow: rgba(4, 28, 50, 0.24) 0px 3px 8px;
+}
+
+/* Fila de campos de búsqueda. */
+#search-form .form-query-row {
+    flex: 1 1 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Campo de búsqueda. */
+#search-form .form-query-row input {
+    flex: 1 1 67%;
+    margin: 0 0.5rem;
+}
+
+/* Fieldset. */
+#search-form fieldset {
+    flex: 1 1 50%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    column-gap: 1rem;
+}
+
+/* Etiquetas. */
+#search-form label {
+    font-weight: bold;
+}
+
+/* Campos tipo search. */
+#search-form input[type='search'] {
+    border: medium solid #041C32;
+    border-radius: 0.5rem;;
+    padding: 0.25rem;
+    font-family: monospace;
+}
+
+/* Campos tipo search cuando tienen enfoque o pasa el mouse encima. */
+#search-form input[type='search']:focus,
+#search-form input[type='search']:hover {
+    border: medium solid #ECB365;
+}
+
+/* Campos checkbox */
+#search-form input[type='checkbox'] {
+    accent-color: #064663;
+}
+
+/* Botón "Buscar" (oculto) */
+#search-form input[type='submit'] {
+    display: none;
+}
+
+/*******************************************************************************
+|
+|   Formulario de búsqueda. Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+
+/*******************************************************************************
+|
+|   Formulario de búsqueda. Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
