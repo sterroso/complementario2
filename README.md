@@ -1,12 +1,17 @@
-# Maquetando con Bootstrap
+# Aplicando Bootstrap
 
-Generar el index y una página más a elección que demuestre el uso correcto
-del mismo. Después cargar todo a [GitHub](https://github.com/)
+A partir del diseño hecho y los conocimientos adquiridos de Bootstrap,
+generar todo el sitio (cinco páginas) que demuestre el uso correcto
+del mismo. Después, cargar todo a [GitHub](https://github.com/)
 
 ## Formato
 
-liga al [repositorio de GitHub](https://github.com/sterroso/desafio4). Debe
+liga al [repositorio de GitHub](https://github.com/sterroso/complementario2). Debe
 tener el nombre "Idea+Apellido".
+
+## Sugerencia
+
+Incluir sugerencias.
 
 ## Consigna
 
@@ -16,5 +21,5 @@ mismo. Después cargar todo a [GitHub](https://github.com/)
 
 ## Aspectos a incluir en el entregable
 
-- Maquetar usando las estructuras correspondientes.
-- Utilizar [GitHub](https://github.com/) para cargar nuestros avances.
+- HTML completo con respectivo linkeos de CSS y JS para poder hacer uso del
+framework y generar un layout responsive.
